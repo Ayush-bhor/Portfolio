@@ -2,4 +2,4 @@
 
 Personal portfolio project.
 
-Repository: https://github.com/Ayush-bhor/Portfolio.git
+Repository: https://ayushbhor-portfolio.netlify.app/
