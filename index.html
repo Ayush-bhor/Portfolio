@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayush Bhor - Portfolio</title>
+
+  <!-- using Poppins from google fonts, looks clean -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="logo">Ayush<span>.dev</span></a>
+
+      <!-- hamburger for mobile, toggled by script.js -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="nav-link active-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li>
+          <!-- dark mode button -->
+          <button id="darkModeBtn" class="dark-mode-btn" title="toggle dark mode">🌙</button>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hi, my name is</p>
+      <h1 class="hero-name">Ayush Bhor</h1>
+      <h2 class="hero-role">
+        I'm a <span id="typingText" class="typing-text"></span><span class="cursor">|</span>
+      </h2>
+      <p class="hero-desc">
+        A passionate Software Developer and third-year Information Technology
+        diploma student at Government Polytechnic Awasari. I enjoy building
+        clean, user-friendly, and efficient applications while continuously
+        learning new technologies.
+      </p>
+
+      <div class="hero-btns">
+        <a href="assets/resume.pdf" download class="btn btn-primary">Download Resume</a>
+        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+      </div>
+    </div>
+
+    <div class="hero-img-wrap">
+      <!-- profile placeholder, swap this later with real photo -->
+      <img src="WhatsApp%20Image%202026-07-01%20at%2011.18.09%20AM.jpeg" alt="Ayush Bhor profile photo" class="hero-img">
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about section" id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>
+          Hi, I'm <strong>Ayush Bhor</strong>, a passionate Software Developer and a
+          third-year Information Technology diploma student at Government Polytechnic
+          Awasari. I enjoy building clean, user-friendly, and efficient applications
+          while continuously learning new technologies.
+        </p>
+        <p>
+          I combine technical knowledge with problem-solving skills to create practical
+          and impactful solutions. I'm always eager to improve my development skills
+          and contribute to meaningful projects.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section class="skills section" id="skills">
+    <h2 class="section-title">Skills</h2>
+    <p class="section-subtitle">Programming languages, web tools, and databases I work with</p>
+
+    <div class="skills-wrap">
+      <div class="skill-item">
+        <div class="skill-top">
+          <span>Programming Languages</span>
+          <span>C, C++, Java, Python, JavaScript</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width:95%;"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-top">
+          <span>Web Technologies</span>
+          <span>HTML, CSS</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width:85%;"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-top">
+          <span>Database</span>
+          <span>MySQL</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width:75%;"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-top">
+          <span>Tools & Technologies</span>
+          <span>Git, GitHub, Visual Studio Code, Notion</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width:90%;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION SECTION -->
+  <section class="education section" id="education">
+    <h2 class="section-title">Education</h2>
+    <p class="section-subtitle">Focused on practical learning, core IT foundations, and consistent skill growth</p>
+
+    <div class="edu-card education-main-card">
+      <div class="education-badge">Current Study</div>
+      <h3>Diploma in Information Technology</h3>
+      <p class="edu-sub">Government Polytechnic Awasari &nbsp;|&nbsp; Third Year (2024 - Present)</p>
+      <p>Building a strong foundation in information technology while applying
+        practical skills to development projects and continuous learning.</p>
+
+      <div class="education-highlights">
+        <div class="highlight-item">
+          <span class="highlight-label">Focus</span>
+          <span class="highlight-value">Programming, Web Development, Databases</span>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-label">Approach</span>
+          <span class="highlight-value">Hands-on practice with real-world problem solving</span>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-label">Goal</span>
+          <span class="highlight-value">Build reliable software and stronger project experience</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact section" id="contact">
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="section-subtitle">If you want to collaborate, ask a question, or just say hello, use the details below.</p>
+
+    <div class="contact-grid">
+      <div class="edu-card contact-card contact-summary-card">
+        <div class="education-badge">Quick Contact</div>
+        <h3>Let’s build something practical</h3>
+        <p>
+          I’m open to project ideas, collaboration, and opportunities that help me grow
+          as a developer while creating useful work.
+        </p>
+
+        <div class="contact-links">
+          <a href="mailto:ayush.bhor05@gmail.com" class="contact-link-item">
+            <span class="contact-link-label">Email</span>
+            <span class="contact-link-value">ayush.bhor05@gmail.com</span>
+          </a>
+          <a href="tel:+919870267755" class="contact-link-item">
+            <span class="contact-link-label">Phone</span>
+            <span class="contact-link-value">+91 9870267755</span>
+          </a>
+          <a href="https://github.com/Ayush-bhor" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+            <span class="contact-link-label">GitHub</span>
+            <span class="contact-link-value">github.com/Ayush-bhor</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="edu-card contact-card contact-form-card">
+        <h3>Send a Message</h3>
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name">
+            <span class="error-msg" id="nameError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="you@example.com">
+            <span class="error-msg" id="emailError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Type your message..."></textarea>
+            <span class="error-msg" id="messageError"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary" id="submitBtn">Send Message</button>
+          <p class="form-success" id="formSuccess">Thanks! Your message has been "sent" (no backend yet, this is just frontend validation demo 😄)</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-socials">
+      <a href="https://github.com/Ayush-bhor" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="mailto:ayush.bhor05@gmail.com">Email</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <p>&copy; <span id="year"></span> Ayush Bhor. Built with plain HTML, CSS & JS.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
